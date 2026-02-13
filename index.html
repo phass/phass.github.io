@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DEVSOFT — Software Engineering (Microservices • Cloud • Kubernetes)</title>
+
+  <meta name="description" content="DEVSOFT — software engineering for backend and cloud. Python, Java, Go. Microservices, Docker, Kubernetes." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DEVSOFT — Software Engineering" />
+  <meta property="og:description" content="Backend & Cloud: Python • Java • Go • Microservices • Docker • Kubernetes" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://phass.github.io/" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured data (B2B / recruiter friendly) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"DEVSOFT",
+    "url":"https://phass.github.io/",
+    "email":"kontakt@devsoft.dev",
+    "sameAs":[
+      "https://github.com/phass",
+      "https://www.linkedin.com/in/REPLACE_ME"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="card" role="main">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>DEVSOFT</h1>
+          <p class="tagline" data-i18n="tagline">Software engineering for backend & cloud</p>
+        </div>
+      </div>
+
+      <nav class="lang" aria-label="Language">
+        <button class="lang-btn" data-lang="pl" aria-pressed="true">PL</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-btn" data-lang="sk" aria-pressed="false">SVK</button>
+      </nav>
+    </header>
+
+    <section class="content">
+      <p class="role" data-i18n="role">Software Engineer</p>
+
+      <div class="meta">
+        <span class="pill"><strong data-i18n="pill.languages">Languages</strong> <span>Python · Java · Go</span></span>
+        <span class="pill"><strong data-i18n="pill.platform">Platform</strong> <span>Microservices · Docker · Kubernetes</span></span>
+        <span class="pill"><strong data-i18n="pill.focus">Focus</strong> <span data-i18n="focusValue">Backend APIs · Cloud delivery · Reliability</span></span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="grid">
+        <div class="block">
+          <h2 data-i18n="b2bTitle">B2B / Cooperation</h2>
+          <p class="muted" data-i18n="b2bBody">
+            Pragmatic delivery, clear communication, and production-grade engineering. Available for consulting and implementation.
+          </p>
+          <ul class="bullets">
+            <li data-i18n="b2bItem1">Microservices & API design</li>
+            <li data-i18n="b2bItem2">Kubernetes, CI/CD, observability</li>
+            <li data-i18n="b2bItem3">Security-minded development</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2 data-i18n="linksTitle">Links</h2>
+          <div class="links">
+            <a class="link" href="https://github.com/phass" target="_blank" rel="noopener noreferrer">
+              <span class="link-label">GitHub</span>
+              <span class="link-sub">github.com/phass</span>
+            </a>
+
+            <!-- Podmień na swój URL LinkedIn -->
+            <a class="link" href="https://www.linkedin.com/in/REPLACE_ME" target="_blank" rel="noopener noreferrer">
+              <span class="link-label">LinkedIn</span>
+              <span class="link-sub">linkedin.com/in/REPLACE_ME</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="left">
+          <span class="label" data-i18n="emailLabel">Email</span>
+          <a class="email" href="mailto:kontakt@devsoft.dev">kontakt@devsoft.dev</a>
+        </div>
+
+        <div class="right">
+          <a class="cta" href="mailto:kontakt@devsoft.dev" data-i18n="cta">Contact</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <span>© <span id="year"></span> DEVSOFT</span>
+          <span class="dot">•</span>
+          <a href="/privacy.html" data-i18n="privacyLink">Privacy</a>
+          <span class="dot">•</span>
+          <a href="/cookies.html" data-i18n="cookiesLink">Cookies</a>
+        </div>
+        <div class="footer-right muted" data-i18n="noTracking">
+          No analytics. No tracking. Minimal cookies (language preference only).
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Cookie / privacy banner -->
+  <div class="cookie" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <div class="cookie-inner">
+      <div>
+        <div class="cookie-title" data-i18n="cookieTitle">Cookie notice</div>
+        <div class="cookie-text" data-i18n="cookieText">
+          This site uses only a functional cookie (language preference). No tracking, no analytics.
+        </div>
+        <div class="cookie-links">
+          <a href="/privacy.html" data-i18n="cookiePrivacy">Privacy</a>
+          <span class="dot">•</span>
+          <a href="/cookies.html" data-i18n="cookieCookies">Cookies</a>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn secondary" id="cookieReject" data-i18n="cookieReject">Reject</button>
+        <button class="btn primary" id="cookieAccept" data-i18n="cookieAccept">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ---------- i18n ----------
+    const I18N = {
+      pl: {
+        tagline: "Inżynieria oprogramowania: backend i cloud",
+        role: "Software Engineer",
+        "pill.languages": "Języki",
+        "pill.platform": "Technologie",
+        "pill.focus": "Fokus",
+        focusValue: "Backend API · Cloud delivery · Niezawodność",
+        b2bTitle: "B2B / Współpraca",
+        b2bBody: "Pragmatyczne dowożenie, klarowna komunikacja i produkcyjna jakość. Dostępny do konsultingu i realizacji.",
+        b2bItem1: "Mikrousługi i projektowanie API",
+        b2bItem2: "Kubernetes, CI/CD, obserwowalność",
+        b2bItem3: "Security-minded development",
+        linksTitle: "Linki",
+        emailLabel: "Email",
+        cta: "Kontakt",
+        privacyLink: "Polityka prywatności",
+        cookiesLink: "Polityka cookies",
+        noTracking: "Brak analityki. Brak śledzenia. Minimalne cookies (tylko język).",
+        cookieTitle: "Informacja o cookies",
+        cookieText: "Ta strona używa wyłącznie funkcjonalnego cookie (zapamiętanie języka). Bez śledzenia i bez analityki.",
+        cookiePrivacy: "Prywatność",
+        cookieCookies: "Cookies",
+        cookieReject: "Odrzuć",
+        cookieAccept: "Akceptuj"
+      },
+      en: {
+        tagline: "Software engineering for backend & cloud",
+        role: "Software Engineer",
+        "pill.languages": "Languages",
+        "pill.platform": "Platform",
+        "pill.focus": "Focus",
+        focusValue: "Backend APIs · Cloud delivery · Reliability",
+        b2bTitle: "B2B / Cooperation",
+        b2bBody: "Pragmatic delivery, clear communication, and production-grade engineering. Available for consulting and implementation.",
+        b2bItem1: "Microservices & API design",
+        b2bItem2: "Kubernetes, CI/CD, observability",
+        b2bItem3: "Security-minded development",
+        linksTitle: "Links",
+        emailLabel: "Email",
+        cta: "Contact",
+        privacyLink: "Privacy",
+        cookiesLink: "Cookies",
+        noTracking: "No analytics. No tracking. Minimal cookies (language preference only).",
+        cookieTitle: "Cookie notice",
+        cookieText: "This site uses only a functional cookie (language preference). No tracking, no analytics.",
+        cookiePrivacy: "Privacy",
+        cookieCookies: "Cookies",
+        cookieReject: "Reject",
+        cookieAccept: "Accept"
+      },
+      sk: {
+        tagline: "Softvérové inžinierstvo: backend a cloud",
+        role: "Softvérový inžinier",
+        "pill.languages": "Jazyky",
+        "pill.platform": "Technológie",
+        "pill.focus": "Fokus",
+        focusValue: "Backend API · Cloud delivery · Spoľahlivosť",
+        b2bTitle: "B2B / Spolupráca",
+        b2bBody: "Pragmatické dodanie, jasná komunikácia a produkčná kvalita. K dispozícii na konzultácie a realizáciu.",
+        b2bItem1: "Mikroslužby a návrh API",
+        b2bItem2: "Kubernetes, CI/CD, observabilita",
+        b2bItem3: "Security-minded development",
+        linksTitle: "Odkazy",
+        emailLabel: "Email",
+        cta: "Kontakt",
+        privacyLink: "Ochrana súkromia",
+        cookiesLink: "Cookies",
+        noTracking: "Žiadna analytika. Žiadne sledovanie. Minimálne cookies (iba jazyk).",
+        cookieTitle: "Informácia o cookies",
+        cookieText: "Táto stránka používa iba funkčné cookie (zapamätanie jazyka). Bez sledovania a bez analytiky.",
+        cookiePrivacy: "Súkromie",
+        cookieCookies: "Cookies",
+        cookieReject: "Odmietnuť",
+        cookieAccept: "Prijať"
+      }
+    };
+
+    const YEAR = new Date().getFullYear();
+    document.getElementById("year").textContent = YEAR;
+
+    function setLang(lang){
+      const dict = I18N[lang] || I18N.en;
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.textContent = dict[key];
+      });
+
+      document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false");
+      });
+    }
+
+    // ---------- Cookies / consent ----------
+    // We store:
+    // - consent: "accepted" or "rejected"
+    // - lang: chosen language
+    // Both are functional, no tracking.
+    const cookie = {
+      get(name){
+        return document.cookie.split("; ").find(x => x.startsWith(name + "="))?.split("=")[1] || "";
+      },
+      set(name, value, days){
+        const maxAge = days ? `; Max-Age=${days*24*60*60}` : "";
+        document.cookie = `${name}=${encodeURIComponent(value)}${maxAge}; Path=/; SameSite=Lax`;
+      }
+    };
+
+    const consent = cookie.get("devsoft_consent");
+    const savedLang = decodeURIComponent(cookie.get("devsoft_lang") || "");
+    const defaultLang = (navigator.language || "en").toLowerCase().startsWith("pl") ? "pl"
+                      : (navigator.language || "en").toLowerCase().startsWith("sk") ? "sk"
+                      : "en";
+    const initialLang = savedLang || defaultLang;
+
+    setLang(initialLang);
+
+    // Language switching
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const lang = btn.dataset.lang;
+        setLang(lang);
+        // Only store language if user accepted OR if we treat it as functional cookie.
+        // Here: we store it as functional cookie either way (still "legal" if truly necessary for requested feature).
+        cookie.set("devsoft_lang", lang, 365);
+      });
+    });
+
+    // Show banner only if no decision yet
+    const banner = document.getElementById("cookieBanner");
+    if (!consent) banner.classList.add("show");
+
+    document.getElementById("cookieAccept").addEventListener("click", () => {
+      cookie.set("devsoft_consent", "accepted", 365);
+      banner.classList.remove("show");
+    });
+
+    document.getElementById("cookieReject").addEventListener("click", () => {
+      cookie.set("devsoft_consent", "rejected", 365);
+      banner.classList.remove("show");
+      // Note: language cookie stays functional; you can remove it on reject if you prefer:
+      // cookie.set("devsoft_lang", "", -1);
+    });
+  </script>
+</body>
+</html>
